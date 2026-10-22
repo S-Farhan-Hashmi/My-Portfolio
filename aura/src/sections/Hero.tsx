@@ -86,6 +86,20 @@ export function Hero() {
           <span className="relative z-10">See the work</span>
           <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-cyan to-violet transition-transform duration-500 group-hover:translate-x-0" />
         </button>
+        <a
+          href={PROFILE.resume}
+          target="_blank"
+          rel="noreferrer"
+          className="group relative overflow-hidden rounded-full border border-white/20 px-7 py-3.5 font-sans text-[11px] tracking-[0.2em] text-white/80 uppercase backdrop-blur-md transition-all duration-300 hover:border-cyan/60 hover:text-white"
+          data-cursor-label="PDF"
+        >
+          <span className="relative z-10 inline-flex items-center gap-2">
+            Résumé
+            <span className="inline-block transition-transform duration-300 group-hover:-translate-y-0.5">
+              ↓
+            </span>
+          </span>
+        </a>
         <button
           type="button"
           onClick={() => scrollToId('contact')}

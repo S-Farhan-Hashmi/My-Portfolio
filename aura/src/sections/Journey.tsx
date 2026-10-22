@@ -11,9 +11,9 @@ export function Journey() {
       eyebrow="The long way round"
       title={
         <>
-          Where the hours went.
+          Education & milestones.
           <br />
-          <span className="text-white/45">A short history of shipping.</span>
+          <span className="text-white/45">How the foundations got laid.</span>
         </>
       }
     >
@@ -64,10 +64,10 @@ export function Journey() {
         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
       >
         {[
-          ['2019', 'First shader'],
-          ['2021', 'Shipped #1'],
-          ['2023', 'Went independent'],
-          ['2025', 'Still rendering'],
+          ['2026', 'Started B.E. CSE'],
+          ['9.85', 'CGPA / 10'],
+          ['4', 'Projects shipped'],
+          ['RVCE', 'Bengaluru, IN'],
         ].map(([year, label]) => (
           <div key={year} className="bg-void/70 px-5 py-5">
             <div className="font-display text-lg font-bold text-white/90">{year}</div>

@@ -6,29 +6,32 @@
  */
 
 export const PROFILE = {
-  firstName: 'ALEX',
-  lastName: 'RIVERA',
-  // Shown under the name in the hero + used in the nav
-  role: 'Creative Engineer & 3D Web Developer',
-  tagline: 'I build interfaces that feel like places, not pages.',
-  location: 'Brooklyn, NY — available worldwide',
-  email: 'hello@alexrivera.dev',
-  availability: 'Open to internships & freelance',
+  firstName: 'FARHAN',
+  lastName: 'HASHMI',
+  fullName: 'Syed Farhan Hashmi',
+  role: 'Computer Science Student · RV College of Engineering',
+  tagline: 'CS student building real systems in Java and Python — from a Swing GUI wired to MySQL, down to the data structures underneath.',
+  location: 'Bengaluru, India',
+  email: 'farhan.hashmi@example.com',
+  availability: 'Open to internships',
+  github: 'https://github.com/S-Farhan-Hashmi',
+  linkedin: 'https://www.linkedin.com/in/s-farhan-hashmi/',
+  resume: '/farhan-resume.pdf',
   bio: [
-    'I design and engineer immersive web experiences — realtime 3D, motion systems, and the kind of detail work that makes a product feel inevitable.',
-    'Five years of shipping production interfaces, most of them in the browser at 60fps on a mid-range laptop. I care about performance budgets, motion that has intent, and code that a team can pick up.',
+    'Computer Science student at RV College of Engineering, currently in my 2nd semester with a CGPA of 9.85 / 10. Strong foundations in Java, Python, and Data Structures, with real shipped projects rather than just coursework.',
+    'I like the part where a design decision has consequences: object-oriented structure that keeps a booking system scalable, a database schema that survives a restart, or a CLI that stays clean once it grows past a hundred lines.',
   ],
   socials: [
-    { label: 'GitHub', handle: '@alexrivera', href: 'https://github.com' },
-    { label: 'LinkedIn', handle: 'in/alexrivera', href: 'https://linkedin.com' },
-    { label: 'X', handle: '@alexr', href: 'https://x.com' },
-    { label: 'Email', handle: 'hello@alexrivera.dev', href: 'mailto:hello@alexrivera.dev' },
+    { label: 'GitHub', handle: '@S-Farhan-Hashmi', href: 'https://github.com/S-Farhan-Hashmi' },
+    { label: 'LinkedIn', handle: 'in/s-farhan-hashmi', href: 'https://www.linkedin.com/in/s-farhan-hashmi/' },
+    { label: 'Resume', handle: 'Download PDF', href: '/farhan-resume.pdf' },
+    { label: 'Email', handle: 'farhan.hashmi@example.com', href: 'mailto:farhan.hashmi@example.com' },
   ],
   stats: [
-    { value: '5+', label: 'Years shipping' },
-    { value: '40+', label: 'Projects delivered' },
-    { value: '60fps', label: 'Non-negotiable' },
-    { value: '12', label: 'Open-source libs' },
+    { value: '9.85', label: 'CGPA / 10' },
+    { value: '4', label: 'Projects shipped' },
+    { value: '3', label: 'Languages' },
+    { value: '2nd', label: 'Semester CS' },
   ],
 } as const
 
@@ -39,19 +42,21 @@ export type Skill = {
 }
 
 export const SKILLS: Skill[] = [
-  { name: 'TypeScript', category: 'Engine', level: 95 },
-  { name: 'React', category: 'Engine', level: 92 },
-  { name: 'Three.js', category: 'Engine', level: 90 },
-  { name: 'WebGL / GLSL', category: 'Engine', level: 84 },
-  { name: 'Node.js', category: 'Engine', level: 80 },
-  { name: 'Rust / WASM', category: 'Engine', level: 62 },
-  { name: 'Motion Design', category: 'Craft', level: 88 },
-  { name: 'Shader Writing', category: 'Craft', level: 86 },
-  { name: 'UI Systems', category: 'Craft', level: 91 },
-  { name: 'Blender', category: 'Craft', level: 70 },
-  { name: 'Performance', category: 'Ship', level: 93 },
-  { name: 'CI / CD', category: 'Ship', level: 78 },
+  { name: 'Java (OOP)', category: 'Engine', level: 86 },
+  { name: 'Multithreading', category: 'Engine', level: 72 },
+  { name: 'Python (OOP)', category: 'Engine', level: 83 },
+  { name: 'C', category: 'Engine', level: 68 },
+  { name: 'Data Structures', category: 'Engine', level: 84 },
+  { name: 'Algorithms', category: 'Engine', level: 82 },
+  { name: 'Bit Manipulation', category: 'Craft', level: 70 },
+  { name: 'NumPy', category: 'Craft', level: 74 },
+  { name: 'Pandas', category: 'Craft', level: 73 },
+  { name: 'Matplotlib', category: 'Craft', level: 68 },
+  { name: 'MySQL', category: 'Ship', level: 78 },
+  { name: 'Git & GitHub', category: 'Ship', level: 80 },
 ]
+
+export const TOOLING = ['VS Code', 'IntelliJ IDEA', 'PyCharm', 'JDBC', 'Java Swing', 'Scikit-learn']
 
 export type Project = {
   title: string
@@ -67,52 +72,52 @@ export type Project = {
 
 export const PROJECTS: Project[] = [
   {
-    title: 'Halcyon Engine',
-    tag: 'Featured',
+    title: 'Airline Management System',
+    tag: 'Flagship',
     year: '2025',
     description:
-      'A browser-native particle system with GPU-driven simulation. Renders 2.4M particles at 120fps on integrated graphics.',
-    stack: ['WebGPU', 'Rust', 'WASM'],
-    metric: '2.4M',
-    metricLabel: 'particles @ 120fps',
+      'A full airline application with account creation, transactions and record management. Swing GUI over a JDBC-wired MySQL backend, covering booking, cancelling and live flight tracking.',
+    stack: ['Java', 'JDBC', 'Swing', 'MySQL'],
+    metric: '5',
+    metricLabel: 'modules · OOP architecture',
     accent: '#7c5cff',
-    href: '#',
+    href: 'https://github.com/S-Farhan-Hashmi',
   },
   {
-    title: 'Northwind',
-    tag: 'Product',
-    year: '2024',
+    title: 'Password Manager',
+    tag: 'Security',
+    year: '2025',
     description:
-      'Realtime analytics surface for logistics fleets. 40k live nodes, streamed over WebSocket, visualised on a GPU timeline.',
-    stack: ['React', 'Three.js', 'Go'],
-    metric: '40k',
-    metricLabel: 'live nodes tracked',
+      'Secure credential vault behind a single master-password gate. File-backed persistence with search built for fast retrieval across a growing store.',
+    stack: ['Python', 'File I/O', 'OOP'],
+    metric: '1',
+    metricLabel: 'master password, full vault',
     accent: '#22d3ee',
-    href: '#',
+    href: 'https://github.com/S-Farhan-Hashmi',
   },
   {
-    title: 'Spectra',
-    tag: 'Open Source',
-    year: '2024',
+    title: 'Task Manager CLI',
+    tag: 'Tooling',
+    year: '2025',
     description:
-      'A tiny 3kb shader library for the web. Composables for gradients, glow, and noise that any CSS property can drive.',
-    stack: ['TypeScript', 'GLSL', 'Vite'],
-    metric: '3kb',
-    metricLabel: 'gzipped runtime',
+      'Command-line task manager with full CRUD. Task data is structured for cheap updates and categorisation, with the whole thing kept modular as it grew.',
+    stack: ['Python', 'CRUD', 'CLI'],
+    metric: 'CRUD',
+    metricLabel: 'create · read · update · delete',
     accent: '#5eead4',
-    href: '#',
+    href: 'https://github.com/S-Farhan-Hashmi',
   },
   {
-    title: 'Orbital',
+    title: 'Text-Based Adventure',
     tag: 'Experiment',
-    year: '2023',
+    year: '2025',
     description:
-      'Gesture-driven spatial photo browser. Hand tracking maps to a quaternion camera rig with inertia and spring physics.',
-    stack: ['MediaPipe', 'WebXR', 'R3F'],
-    metric: '±0.2°',
-    metricLabel: 'tracking drift',
+      'Interactive fiction driven by structured logic and modular functions. A dictionary-based navigation and decision system keeps the world graph easy to extend.',
+    stack: ['Python', 'Dicts', 'Game Logic'],
+    metric: '∞',
+    metricLabel: 'branching paths to explore',
     accent: '#ffb547',
-    href: '#',
+    href: 'https://github.com/S-Farhan-Hashmi',
   },
 ]
 
@@ -126,49 +131,49 @@ export type Role = {
 
 export const TIMELINE: Role[] = [
   {
-    period: '2024 — Now',
-    title: 'Senior Frontend Engineer',
-    company: 'Lumen Labs',
-    note: 'Realtime graphics team, 9 people, shipped to 2M users.',
+    period: '2026 — Present',
+    title: 'B.E. in Computer Science',
+    company: 'RV College of Engineering (RVCE)',
+    note: '2nd Semester · CGPA 9.85 / 10',
     points: [
-      'Led the rewrite of the 3D configurator — cut time-to-interactive 4.1s → 1.2s.',
-      'Built the shader authoring tool the design team still uses daily.',
+      'Core focus on Data Structures & Algorithms: arrays, sorting, searching, bit manipulation.',
+      'Building depth in object-oriented design and multithreaded Java.',
     ],
   },
   {
-    period: '2022 — 2024',
-    title: 'Creative Technologist',
-    company: 'Studio Meridian',
-    note: 'Award-winning experiential work for culture and retail brands.',
+    period: '2025 — 2026',
+    title: 'Four Shipped Applications',
+    company: 'Self-directed',
+    note: 'Java and Python, each one taken from idea to working system.',
     points: [
-      'Shipped 11 WebGL campaigns, two of which took a Cannes Lions shortlist.',
-      'Introduced the studio-wide performance budget; dropped p75 LCP by 58%.',
+      'Airline Management System — Swing GUI, JDBC, MySQL, OOP architecture.',
+      'Password Manager, Task Manager CLI and a text-based adventure game.',
     ],
   },
   {
-    period: '2020 — 2022',
-    title: 'Frontend Engineer',
-    company: 'Northwind',
-    note: 'Internal platform for a 400-person product org.',
+    period: '2025',
+    title: 'Data & Analysis Stack',
+    company: 'Self-taught',
+    note: 'NumPy, Pandas, Matplotlib and Scikit-learn.',
     points: [
-      'Owned the design system used by 30+ product teams.',
-      'Mentored four junior engineers into senior roles.',
+      'Used across coursework and personal data projects for analysis and visualisation.',
+      'Paired with MySQL for anything that needs to persist beyond a session.',
     ],
   },
 ]
 
 export const PRINCIPLES = [
   {
-    title: 'Motion with intent',
-    body: 'Every animation earns its milliseconds. If it doesn’t orient or explain, it goes.',
+    title: 'Structure before features',
+    body: 'A booking system that can’t take a new feature next month wasn’t finished this month. OOP isn’t homework, it’s a budget.',
   },
   {
-    title: 'Real is a budget',
-    body: 'A beautiful frame is worthless at 12fps. Performance is part of the design, not a cleanup task.',
+    title: 'Persistence is the test',
+    body: 'Anything that loses state on restart isn’t done. JDBC and file I/O taught me that faster than any lecture.',
   },
   {
-    title: 'Detail is the tone',
-    body: 'The 20ms of easing nobody notices is exactly what makes the whole thing feel expensive.',
+    title: 'Clean beats clever',
+    body: 'A CLI is only as good as the day you reopen it six months later and still understand every line.',
   },
 ]
 

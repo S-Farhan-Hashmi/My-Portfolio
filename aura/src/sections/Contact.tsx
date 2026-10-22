@@ -22,9 +22,8 @@ export function Contact() {
         <Reveal delay={0.12}>
           <div className="flex flex-col gap-8">
             <p className="max-w-xl font-sans text-[15px] leading-[1.75] text-white/55 sm:text-base">
-              I’m currently taking on internships, freelance work, and the occasional
-              “we have no idea if this is possible” brief. If you’ve got a project,
-              a question, or just want to compare shader tricks — send it.
+              I’m a 2nd-year CS student at RVCE, currently open to internships. If you’ve
+              got a role, a project, or just a problem you want a second brain on — send it.
             </p>
 
             <a
