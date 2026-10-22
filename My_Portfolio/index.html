@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vishwa — B.E. CSE Student, RVCE</title>
+<meta name="description" content="Portfolio of Vishwa, 3rd semester Computer Science & Engineering student at R.V. College of Engineering. CGPA 9.6.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<canvas id="webgl"></canvas>
+
+<!-- Loader -->
+<div id="loader">
+  <div class="loader-ring"></div>
+  <p class="mono">LOADING PORTFOLIO…</p>
+</div>
+
+<!-- Custom cursor -->
+<div id="cursor"><span class="cursor-core"></span></div>
+
+<!-- FX layer: slime splats on click -->
+<div id="fx-layer"></div>
+
+<!-- HUD -->
+<header class="hud">
+  <a class="logo" href="#hero">V<span>//</span></a>
+
+  <nav class="hud-nav">
+    <a href="#about">ABOUT</a>
+    <a href="#projects">PROJECTS</a>
+    <a href="#skills">SKILLS</a>
+    <a href="#contact">CONTACT</a>
+  </nav>
+
+  <div class="hud-right">
+    <div class="hud-tag mono">3RD SEM · RVCE</div>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section id="hero" class="section hero">
+    <p class="kicker mono reveal">// B.E. COMPUTER SCIENCE &amp; ENGINEERING · 3RD SEMESTER</p>
+    <h1 class="aura-text reveal" data-text="VISHWA">VISHWA</h1>
+    <p class="tagline reveal">Computer Science &amp; Engineering student at R.V. College of Engineering · CGPA 9.6</p>
+    <div class="hero-chips reveal">
+      <span class="chip">JAVA</span>
+      <span class="chip">C</span>
+      <span class="chip">PYTHON</span>
+      <span class="chip">HTML</span>
+      <span class="chip">CSS</span>
+      <span class="chip">JAVASCRIPT</span>
+    </div>
+    <a class="scroll-cue mono reveal" href="#about">SCROLL TO SEE MORE ↓</a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="drip-edge" aria-hidden="true"></div>
+    <div class="panel reveal">
+      <h2 class="section-title">ABOUT<span class="accent"> ME</span></h2>
+      <p class="lede">
+        I'm a 3rd semester B.E. Computer Science &amp; Engineering student at
+        R.V. College of Engineering, Bangalore, currently maintaining a CGPA of 9.6.
+      </p>
+      <p class="body-copy">
+        Proficient in Java, C and Python, with working knowledge of HTML, CSS and JavaScript.
+        I enjoy turning ideas into working projects — from IoT hardware builds to web apps.
+        Currently learning data structures, DBMS and operating systems, and open to
+        internships, hackathons and collaborative student projects.
+      </p>
+      <div class="stat-grid">
+        <div class="stat"><span class="stat-num aura-text" data-text="9.6">9.6</span><span class="stat-label mono">CGPA</span></div>
+        <div class="stat"><span class="stat-num aura-text" data-text="3">3</span><span class="stat-label mono">SEMESTER</span></div>
+        <div class="stat"><span class="stat-num aura-text" data-text="3">3</span><span class="stat-label mono">MAJOR PROJECTS</span></div>
+        <div class="stat"><span class="stat-num aura-text" data-text="6+">6+</span><span class="stat-label mono">TECHNOLOGIES</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <h2 class="section-title reveal">MY<span class="accent"> PROJECTS</span></h2>
+    <div class="cards">
+
+      <article class="card reveal">
+        <span class="card-num mono">01</span>
+        <h3>WATER QUALITY MONITOR</h3>
+        <p>An IoT-based water quality monitoring system that continuously measures parameters like pH, turbidity and TDS from real sensors and flags unsafe water in real time.</p>
+        <div class="tags mono"><span>IOT</span><span>SENSORS</span><span>C</span></div>
+        <span class="card-cta mono">VIEW DETAILS →</span>
+      </article>
+
+      <article class="card reveal">
+        <span class="card-num mono">02</span>
+        <h3>FOOD PREDICTION &amp; ORDERING</h3>
+        <p>A food resource prediction and ordering app that forecasts demand to reduce food waste, and lets customers browse menus and place orders seamlessly.</p>
+        <div class="tags mono"><span>PYTHON</span><span>PREDICTION</span><span>APP</span></div>
+        <span class="card-cta mono">VIEW DETAILS →</span>
+      </article>
+
+      <article class="card reveal">
+        <span class="card-num mono">03</span>
+        <h3>CODING REVIEW COACH</h3>
+        <p>A coding review coach/mentor that analyses code submissions, points out mistakes and suggests better approaches — helping students write cleaner, correct code.</p>
+        <div class="tags mono"><span>JAVA</span><span>DSA</span><span>MENTORING</span></div>
+        <span class="card-cta mono">VIEW DETAILS →</span>
+      </article>
+
+      <article class="card reveal">
+        <span class="card-num mono">04</span>
+        <h3>THIS 3D PORTFOLIO</h3>
+        <p>The website you're looking at — an interactive 3D portfolio with a custom shader orb, smoke and slime particle effects, built from scratch.</p>
+        <div class="tags mono"><span>HTML</span><span>CSS</span><span>JAVASCRIPT</span></div>
+        <span class="card-cta mono">YOU'RE HERE →</span>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="drip-edge" aria-hidden="true"></div>
+    <h2 class="section-title reveal">SKILLS &amp;<span class="accent"> COURSEWORK</span></h2>
+    <div class="marquee-wrap reveal">
+      <div class="marquee left">
+        <div class="marquee-track">
+          <span>PYTHON ✦ JAVA ✦ C ✦ HTML ✦ CSS ✦ JAVASCRIPT ✦ GIT ✦ GITHUB ✦</span>
+          <span>PYTHON ✦ JAVA ✦ C ✦ HTML ✦ CSS ✦ JAVASCRIPT ✦ GIT ✦ GITHUB ✦</span>
+        </div>
+      </div>
+      <div class="marquee right">
+        <div class="marquee-track">
+          <span>DATA STRUCTURES ✦ DBMS ✦ OPERATING SYSTEMS ✦ OOP ✦ MATHEMATICS ✦</span>
+          <span>DATA STRUCTURES ✦ DBMS ✦ OPERATING SYSTEMS ✦ OOP ✦ MATHEMATICS ✦</span>
+        </div>
+      </div>
+      <div class="marquee left slow">
+        <div class="marquee-track">
+          <span>PROBLEM SOLVING ✦ TEAMWORK ✦ COMMUNICATION ✦ TIME MANAGEMENT ✦</span>
+          <span>PROBLEM SOLVING ✦ TEAMWORK ✦ COMMUNICATION ✦ TIME MANAGEMENT ✦</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <h2 class="mega aura-text reveal" data-text="GET IN TOUCH">GET IN TOUCH</h2>
+    <p class="tagline reveal">Open to internships, collaborations and student projects.</p>
+    <div class="contact-row reveal">
+      <a class="btn goo" href="mailto:vishwa@example.com">vishwa@example.com</a>
+      <a class="btn ghost" href="#" aria-label="GitHub">GITHUB</a>
+      <a class="btn ghost" href="#" aria-label="LinkedIn">LINKEDIN</a>
+      <a class="btn ghost" href="#" aria-label="Resume">RESUME</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="mono">
+  <span>© 2026 VISHWA</span>
+  <span>B.E. CSE · R.V. COLLEGE OF ENGINEERING · 3RD SEMESTER</span>
+  <span>BUILT WITH HTML, CSS, JS &amp; THREE.JS</span>
+</footer>
+
+<noscript>
+  <div class="noscript">This portfolio requires JavaScript.</div>
+</noscript>
+
+<script src="js/ui.js" defer></script>
+<script src="js/bundle.js" defer></script>
+<script>
+  // Failsafe: never leave visitors stuck on the loader or with hidden text,
+  // even if WebGL or the module script fails for any reason.
+  setTimeout(function () {
+    var l = document.getElementById('loader');
+    if (l && !l.classList.contains('done')) l.classList.add('done');
+    document.querySelectorAll('.reveal:not(.in)').forEach(function (el) { el.classList.add('in'); });
+  }, 5000);
+</script>
+</body>
+</html>
